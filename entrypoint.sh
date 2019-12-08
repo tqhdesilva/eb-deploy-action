@@ -20,4 +20,4 @@ aws_secret_access_key = ${AWS_SECRET_ACCESS_KEY}
 EOF
 
 cd $GITHUB_WORKSPACE && \
-eb deploy
+eb deploy -v
