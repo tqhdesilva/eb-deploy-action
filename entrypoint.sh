@@ -7,6 +7,7 @@ export AWS_DEFAULT_REGION=$3
 # Set up eb profile
 AWS_CONFIG_FILE=${HOME}/.aws/config
 AWS_PROFILE=eb-cli
+[ ! -d $HOME/.aws ] && mkdir -p ${HOME}/.aws/
 touch $AWS_CONFIG_FILE
 chmod 600 $AWS_CONFIG_FILE
 
