@@ -1,13 +1,16 @@
 name: "eb-deploy"
 description: "deploy eb application"
 inputs:
-  AWS_ACCESS_KEY_ID:
+  aws-access-key-id:
     required: true
-  AWS_SECRET_ACCESS_KEY:
+  aws-secret-access-key:
+    required: true
+  aws-region:
     required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.AWS_ACCESS_KEY_ID }}
-    - ${{ inputs.AWS_SECRET_ACCESS_KEY }}
+    - ${{ inputs.aws-access-key-id }}
+    - ${{ inputs.aws-secret-access-key }}
+    - ${{ aws-region }}
