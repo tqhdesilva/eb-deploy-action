@@ -1,3 +1,3 @@
 FROM coxauto/aws-ebcli
-COPY ./entrypoint.sh ./
-ENTRYPOINT ["sh", "entrypoint.sh"]
+COPY ./entrypoint.sh /
+ENTRYPOINT ["/entrypoint.sh"]
