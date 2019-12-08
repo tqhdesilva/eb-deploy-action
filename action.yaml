@@ -19,4 +19,4 @@ runs:
   args:
     - ${{ inputs.aws-access-key-id }}
     - ${{ inputs.aws-secret-access-key }}
-    - ${{ aws-region }}
+    - ${{ inputs.aws-region }}
