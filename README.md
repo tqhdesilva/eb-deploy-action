@@ -1,6 +1,7 @@
 # eb-deploy-action
 
 Make sure you run `configure-aws-credentials` action beforehand to set your aws envs.
+Also make sure you have a `$PROJECT/.elasticbeanstalk/config.yml` file in version control.
 
 ```
       - name: Configure AWS Credentials
